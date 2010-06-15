@@ -1,0 +1,26 @@
+<!DOCTYPE plugin SYSTEM "../../libs/devblocks/plugin.dtd">
+<plugin>
+	<id>cerberusweb.childorgs</id>
+	<name>[Address Book] Child Organizations Tab</name>
+	<description>Enables a child organizations tab that displays all the children of an organization</description>
+	<author>WebGroup Media, LLC.</author>
+	<revision>0</revision>
+	
+    <!-- Exported Classes -->
+    	
+	<extensions>
+        <extension point="cerberusweb.org.tab">
+			<id>childorgs.tab.org</id>
+			<name>Child Orgs Tab</name>
+			<class>
+				<file>api/App.php</file>
+				<name>ChChildOrgsTab</name>
+			</class>
+			<params>
+				<param key="uri" value="childorgs" />
+                <param key="title" value="childorgs.tab.title" />
+			</params>
+		</extension>
+        
+	</extensions>
+</plugin>
